@@ -33,6 +33,7 @@ def get_args():
     parser.add_argument('--int_adv_coef', type=float, default=0.5, help='GAE lambda coefficient')
     parser.add_argument('--update_proportion', type=float, default=0.1, help='Update proportion coefficient')
     parser.add_argument('--lambda_C', type=float, default=0.1, help='Ridge regularizer λ')
+    parser.add_argument('--embedding_dim', type=int, default=256, help='Embedding dim')
     parser.add_argument('--norm_int_reward', type=str, default="rms", help='Use rms, min max scale to normalize intrinsic reward or do not normalize. "no": do not normalize. "rms": use running mean std. "min_max": use min max scale.')
 
     parser.add_argument("--is_normalize_advantage", type=bool, default=False, help = "Use normalize advantage or not")
